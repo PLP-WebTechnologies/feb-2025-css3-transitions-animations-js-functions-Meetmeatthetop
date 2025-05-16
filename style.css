@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 40px;
+  text-align: center;
+}
+h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+.animated-btn {
+  padding: 15px 40px;
+  font-size: 1.2em;
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  margin-top: 30px;
+}
+.animated-btn:hover {
+  background: #388e3c;
+  transform: scale(1.08);
+}
+.box {
+  width: 120px;
+  height: 120px;
+  background: #2196f3;
+  margin: 40px auto;
+  border-radius: 16px;
+  transition: box-shadow 0.4s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: relative;
+}
+.box.animate {
+  animation: bounce 1s;
+}
+@keyframes bounce {
+  0%   { transform: translateY(0);}
+  30%  { transform: translateY(-60px);}
+  50%  { transform: translateY(0);}
+  70%  { transform: translateY(-30px);}
+  100% { transform: translateY(0);}
+}
+.prefs {
+  margin-top: 40px;
+}
+.prefs label {
+  font-size: 1em;
+  margin-right: 10px;
+}
+.prefs input[type="color"] {
+  border: none;
+  width: 40px;
+  height: 30px;
+  vertical-align: middle;
+}
